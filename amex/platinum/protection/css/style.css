@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+#platinum {
+  background-image: url('/amex/platinum/protection/image/bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center 267px;
+}
+.breadcrumbs {
+  color: #fff;
+}
+.breadcrumbs a {
+  color: #fff;
+}

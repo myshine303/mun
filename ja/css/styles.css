@@ -1,0 +1,240 @@
+@charset "UTF-8";
+
+#mainArea.top {
+	margin-top: 0;
+}
+/*カルーセル*/
+#mainArea.top .imgElm {
+	position: relative;
+}
+.ofHidden + .bgPink02 {
+	margin-top: 30px;
+}
+/*PC*/
+@media screen and (min-width:641px) {
+	.ofHidden + .bgPink02 {
+		margin-top: 40px;
+	}
+	.ofHidden .webService{
+		height: 100%;
+		width: 25%;
+		position: absolute;
+		right: 3.5%;
+		top: 0;
+	}
+	.ofHidden .webService .webServiceInner{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+	}
+	.ofHidden .webService .loginBoxPc {
+		background-color:rgba(106,106,106,0.4);
+		padding: 10px;
+		text-align: center;
+	}
+	.ofHidden .webService .loginBoxPc > div {
+		background: #fff;
+		padding: 25px 20px;
+		box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.43);
+	}
+	.ofHidden .webService .loginBoxPc > div .title {
+		font-size: 1.14286rem;
+		font-weight: bold;
+	}
+	.ofHidden .webService .loginBoxPc > div .text {
+		font-size: 0.85714rem;
+		margin-top: 15px;
+	}
+	.ofHidden .webService .loginBoxPc > div .btnWrap {
+		margin-top: 15px;
+	}
+	.ofHidden .loginBoxPc > div .btnWrap p + p {
+		margin-top: 10px;
+	}
+	.ofHidden .loginBoxPc > div .btnWrap .btnType12,
+	.ofHidden .loginBoxPc > div .btnWrap .btnType14 {
+		font-size: 1rem;
+		padding: 0.92857rem 2rem;
+	}
+}
+/*Spのみログインボックス*/
+.loginBoxSp{
+	margin-top: 20px;
+	padding: 19px 15px 21px;
+	background-color: #F8F8F8;
+}
+.loginBoxSp > .inner {
+	padding: 25px 20px;
+	background-color: #fff;
+	text-align: center;
+}
+.loginBoxSp > .inner .title {
+	font-size: 1.286rem;
+	font-weight: bold;
+}
+.loginBoxSp > .inner .text {
+	margin-top: 15px;
+}
+.loginBoxSp > .inner .btnWrap {
+	margin-top: 20px;
+}
+.loginBoxSp > .inner .btnWrap p + p {
+	margin-top: 20px;
+}
+/*カードの便利なご活用方法*/
+/*JAならではの特典・サービス*/
+.serviceBox {
+	padding: 80px 0 60px;
+}
+.serviceBox .cardLink.colType02 a {
+	background: #fff;
+}
+/*PC*/
+@media screen and (min-width:641px) {
+	.serviceBox {
+		padding: 100px 0;
+	}
+	.serviceBox .cardLink.colType02 .cardLinkImg {
+		border-right: 1px solid #CFCFCF;
+	}
+}
+/*選べるお支払い、お借入れ方法*/
+/*各種照会・お手続き*/
+.inquiryBox {
+	background: url(/ja/img/index_bg_sp_0001.png)no-repeat center center;
+	background-size:cover;
+	padding: 50px 0 60px;
+}
+.inquiryBox .leadType01 {
+	color: #006335;
+	font-size: 1.42857rem;
+	text-align: center ;
+}
+.videoBox01 {
+	width: 100% ;
+	margin-top: 30px ;
+}
+.videoBox01 .youtube {
+	box-shadow: 0px 0px 6px 0px rgba(10,10,10,0.16);
+}
+.videoBox01 .youtubeInner {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+.videoBox01 .youtubeInner iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+.videoBox01 .text {
+	margin-top: 30px;
+}
+.inquiryBox .loginBloc {
+	margin: 30px 0 40px;
+	border-top: 1px solid #CFCFCF;
+	border-bottom: 1px solid #CFCFCF;
+	padding: 40px 0;
+}
+
+.inquiryBox .linkBtnWrap01 .colBtnItem {
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack: center;
+	justify-content: center;
+}
+.inquiryBox .linkBtnWrap01 .colBtnItem + .colBtnItem{
+	margin-top: 20px;
+}
+.inquiryBox .linkBtnWrap01 .colBtnItem .btnType01{
+	font-size: 1rem;
+}
+@media screen and (min-width:641px) {
+	.inquiryBox {
+		background: url(/ja/img/index_bg_pc_0001.png)no-repeat center center;
+		background-size:cover;
+		padding: 100px 0 80px;
+	}
+	.inquiryBox .leadType01 {
+		font-size: 1.71429rem;
+	}
+	.videoBox01 {
+		width: 84.28% ;
+		margin: 50px auto 0;
+		display: -webkit-box;
+		display: flex;
+		flex-wrap: nowrap;
+	}
+	.videoBox01 .youtube {
+		width: 58.26%;
+		margin: 0 3.17% 0 1.48%;
+	}
+	.videoBox01 .youtubeInner {
+		position: relative;
+		width: 100%;
+		padding-top: 56.25%;
+	}
+	.videoBox01 .text {
+		width: 37.09%;
+		margin-top: 0;
+		padding: 10px 0;
+	}
+	.inquiryBox .loginBloc {
+		margin: 60px 0;
+		padding: 40px 20px;
+		border-top: 1px solid #CFCFCF;
+		border-bottom: 1px solid #CFCFCF;
+	}
+	.inquiryBox .linkBtnWrap01 {
+	display: -webkit-box;
+	display: flex;
+	flex-wrap: wrap;
+	}
+	.inquiryBox .linkBtnWrap01 > .colBtnItem {
+		width: 360px;
+		margin-left: 0px;
+		margin-right: 20px;
+	}
+	.inquiryBox .linkBtnWrap01 .colBtnItem + .colBtnItem{
+		margin-top: 0;
+	}
+	.inquiryBox .linkBtnWrap01 > .colBtnItem:nth-child(3n) {
+		margin-right: 0px;
+	}
+}
+/*カードをお使いいただく前に*/
+.carduse {
+
+}
+.carduse {
+	padding: 50px 0;
+}
+.carduse .colItemTxt {
+	background: inherit;
+}
+/*PC*/
+@media screen and (min-width:641px) {
+	.carduse {
+		padding: 60px 0;
+	}
+}
+/*最新情報*/
+.latestInfo .latestInfo01.notice .clmItem + .clmItem {
+	margin-top: 60px;
+}
+@media screen and (min-width:641px) {
+	.latestInfo .latestInfo01 {
+		width: 84.28%;
+		margin: 40px auto 0;
+	}
+	.latestInfo .latestInfo01.cautions {
+		padding: 0 20px;
+	}
+	.latestInfo .latestInfo01.notice .clmItem + .clmItem {
+		margin-top: 0;
+	}
+}

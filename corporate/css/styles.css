@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/* ========== mvSlider
+======================================== */
+.mvSlider {
+	position: relative;
+}
+.mvSliderCatch {
+	position: absolute;
+	bottom: 40px;
+	left: 40px;
+}
+.mvSliderCatchText {
+	color: #fff;
+	font-size: 28px;
+}
+.mvSliderCatchLink a {
+	color: #fff;
+	text-decoration: none;
+}
