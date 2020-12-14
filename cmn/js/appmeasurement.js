@@ -106,7 +106,7 @@ s.pathExcludeDelim=";"		// portion of the path to exclude
 s.pathConcatDelim="/"		// page name component separator
 s.pathExcludeList=""		// elements to exclude from the path
 s.usePlugins=true
-
+	
 function s_doPlugins(s) {
 	/* force referrer for smartphone page Unique Setting*/
 	/* force flg for smartphone page Unique Setting*/
@@ -153,7 +153,7 @@ function s_doPlugins(s) {
 	// if(!s.pageName){
 	// 	s.pageName = "/" + s.getPageName();
 	// }
-
+	
 	/*copy pageName for LandingPage*/
 	s.eVar1 = "D=pageName";
 
@@ -162,7 +162,7 @@ function s_doPlugins(s) {
 
 	/* url */
 	s.eVar72 = s.prop1 = "D=g";
-
+	
 	/* referer */
 	s.prop2 = "D=r";
 	s.eVar2 = "D=r";
@@ -179,7 +179,7 @@ function s_doPlugins(s) {
 
 	/* clickThruQuality */
 	s.clickThruQuality_yt('event15','event16');
-
+	
 	/* prop4,5_eVar4,5 TimePartingCodes Hour */
 	var tmp_date = new Date();//init
 	s.prop4 = tmp_date.getFullYear() +"/"+ (tmp_date.getMonth()+1) +"/"+ tmp_date.getDate();	//YYYY/MM/DD
@@ -207,7 +207,7 @@ function s_doPlugins(s) {
 	}
 
 	/*ChannelManager +cross visit*/
-
+	
 	if(s.getVisitStart("s_visitstart") == 1){
 		s_vs_flg = true;
 	}else{
@@ -218,8 +218,8 @@ function s_doPlugins(s) {
 		s.campaign_tmp = s.campaign;//backup temporary
 		s.cm_keyword = "";
 		s.cm_host ="";
-
-
+		
+		
 		if(!s.eo && !s.lnk){
 			s.objCM = s.channelManager();
 		}
@@ -288,7 +288,7 @@ function s_doPlugins(s) {
 
 		/*postclick minimum level*/
 		s.eVar49 = s.crossVisitParticipation(s.eVar49,'s_cpm','60','5',' > ','purchase',1);
-
+		
 		/*postclick keyword(PPC only)*/
 		s.eVar48 = s.crossVisitParticipation(s.eVar45,'s_key','60','5',' > ','purchase',1);
 
@@ -329,7 +329,7 @@ function s_doPlugins(s) {
 	if(!s.pageName && !s.pageType) {
 		s.pageName = getPageNameMTL("/");
 		s.pageName = MaxBytesString(s.pageName,100)
-	}
+	} 
 
 	//action on 1st request this block
 	var sc_1stOr2nd = s.get1stOr2ndpage();
@@ -396,7 +396,7 @@ function s_doPlugins(s) {
 		s.eVar21 = 'D="(E)"+pageName';
 	} else {
 		s.prop65 = "D=pageName";
-		s.eVar21 = "D=pageName";
+		s.eVar21 = "D=pageName";		
 	}
 
 	//directory base depth
@@ -496,7 +496,7 @@ function s_doPlugins(s) {
 						s.prop11 = "REPEAT";
 						break;
 					}
-				}
+				}				
 			}
 		}
 		//TOP
@@ -709,7 +709,7 @@ function s_doPlugins(s) {
 		} else {
 			s.prop13 = "D=c12";
 		}
-
+		
 	} else {
 		s.prop13 = "D=c11";
 	}
@@ -780,7 +780,7 @@ function s_doPlugins(s) {
 		if(s.prop12.indexOf("D=") != -1) {
 			s.eVar54 = s.prop12;
 		} else {
-			s.eVar54 = "D=c12";
+			s.eVar54 = "D=c12";		
 		}
 
 		if(s.prop13.indexOf("D=") != -1) {
@@ -810,7 +810,7 @@ function s_doPlugins(s) {
 				if(s.prop12.indexOf("D=") != -1) {
 					s.eVar63 = s.prop12;
 				} else {
-					s.eVar63 = "D=c12";
+					s.eVar63 = "D=c12";		
 				}
 
 				if(s.prop13.indexOf("D=") != -1) {
@@ -831,7 +831,7 @@ function s_doPlugins(s) {
 				if(s.prop12.indexOf("D=") != -1) {
 					s.eVar63 = s.prop12;
 				} else {
-					s.eVar63 = "D=c12";
+					s.eVar63 = "D=c12";		
 				}
 
 				if(s.prop13.indexOf("D=") != -1) {
@@ -873,7 +873,7 @@ function s_doPlugins(s) {
 
 	//inboundMarketing
 	s.channelManager('','','0');
-
+	
 	var InflowKbn_1 = "";
 	var InflowKbn_2 = "";
 
@@ -940,7 +940,7 @@ function s_doPlugins(s) {
 		} else {
 			if(sc_1stOr2nd==1) {
 				InflowKbn_1 = "OTH";
-				InflowKbn_2 = "OTH:" + refDmain;
+				InflowKbn_2 = "OTH:" + refDmain;				
 			}
 		}
 
@@ -1001,7 +1001,7 @@ function s_doPlugins(s) {
 
 	//New FAQ Site
 	if((splitPath[1] == "faq") && (splitPath[2] == "detail")) {
-
+	
 		var brand_flg = "";
 		if (document.referrer) {
 			var faq_ref;
@@ -1014,7 +1014,7 @@ function s_doPlugins(s) {
 			cookie_param = document.cookie.match(/f_brand=([^;]*)/)[1];
 			s.eVar76 = brand_flg = cookie_param;
 		}
-
+		
 		var faq_inout = aa_refdmainFAQ(refDmain);
 		if (faq_inout == 1) {
 			if (typeof(s.events) !="undefined") {
@@ -1037,7 +1037,7 @@ function s_doPlugins(s) {
 		}
 
 		switch(brand_flg) {
-		case 'm':
+		case 'm':		
 			if (faq_inout == 1) {
 				s.events += ",event64";
 			} else if (faq_inout == 2) {
@@ -1145,7 +1145,7 @@ function s_doPlugins(s) {
 
 
 	s.plugins="track_off";
-
+	
 	sc_doplugin_once = true;
 }
 s.doPlugins=s_doPlugins
@@ -1230,7 +1230,7 @@ function aa_clickAdmission(){
 
 function aa_clickAccordion(){
 	s=s_gi(s_account);
-	s.linkTrackVars='events';
+	s.linkTrackVars='events';	
 	s.linkTrackEvents='event48';
 	s.events='event48';
 	s.tl(this,'o','aa_clickAccordion');
@@ -1299,7 +1299,7 @@ $('.acdWaletteQA').click(function () {
 	var $linkname = $self.attr("data-AcNo");
     if (!$self.hasClass("open")) {
 		s=s_gi(s_account);
-		s.tl(this,'o',$linkname);
+		s.tl(this,'o',$linkname);	
 	} else if ($(this).hasClass("open")) {
 	}
 });
@@ -1309,7 +1309,7 @@ $('.analysisPhoneNum').click(function () {
 	var $linkname = $self.attr("data-telNo");
     if($linkname){
 		s=s_gi(s_account);
-		s.tl(this,'o',$linkname);
+		s.tl(this,'o',$linkname);	
 	}
 });
 

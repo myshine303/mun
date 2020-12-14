@@ -1113,9 +1113,7 @@ elementPatch
   -webkit-transition: all .2s;
   transition: all .2s;
 }
-.btnType03::before {
-  right: 20px;
-}
+
 .btnType03.is-load::before {
   right: 27px;
 }
@@ -1132,7 +1130,6 @@ elementPatch
   max-width: 360px;
   padding: 1rem 2.5rem 0.92857rem;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
-  font-size: 1.14286rem;
 }
 
 .btnType04:hover,.btnType06:hover,.btnType07:hover,.btnType13:hover,.btnType14:hover {
@@ -1233,11 +1230,8 @@ elementPatch
 
 .btnType09,.btnType10 {
   max-width: 360px;
-  padding: 0.92857rem 32px;
+  padding: 0.92857rem 3rem;
   font-size: 1rem;
-}
-.btnType09::before {
-  left: 20px;
 }
 .btnType11 > .icon {
   font-size: 1.14286rem;
@@ -1260,40 +1254,10 @@ elementPatch
   background: #fff;
 }
 .btnType17 {
-  padding: 20px 30px;
-}
-.btnType17 > .img {
-  margin-right: 35px;
-}
-.btnType17 svg *{
-  -webkit-transition: all .2s;
-  transition: all .2s;
-}
-.btnType17:hover svg *{
-  stroke: #e60000;
-}
-.btnType17:hover svg [fill="#e60000"]{
-  fill: #fff;
-}
-.btnType17:hover > .txt > .txtItem02::before {
-  border-top: 1px solid #e60000;
-  border-right: 1px solid #e60000;
-}
-.clm.type17 {
-  flex-wrap: wrap;
-}
-.clm.type17 > .btnType17:nth-child(even) {
-  margin-left: 16px;
-}
-.clm.type17 > .btnType17:nth-child(2) {
-  margin-top: 0;
-}
-.clm.type17 > .btnType17:nth-child(n+3) {
-  margin-top: 14px;
+  padding: 24px 30px;
 }
 .btnType18 {
   font-size: 1.14286rem;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
 }
 .clm > .btnType18 {
   width: 100%;
@@ -1321,10 +1285,6 @@ elementPatch
   font-size: 1.14286rem;
   padding: 0 20px;
   margin-top: 10px;
-}
-.clm > .btnType19 {
-  width: calc(50% - 15px);
-  margin-bottom: 30px;
 }
 .clm > .btnType19:not(:first-child) {
   margin-left: 30px;
@@ -2009,9 +1969,6 @@ elementPatch
 .emBox.type02 {
   padding: 30px;
 }
-.emBox.type02 .inner {
-  padding: 28px 30px 22px;
-}
 .emBox.type02 .clmItem > .txtNum {
   text-align: center;
 }
@@ -2029,101 +1986,6 @@ elementPatch
   margin: -15px 0 0;
   border-width: 15px 0 15px 15px;
   border-color: transparent transparent transparent #ffdbdb;
-}
-.emBox.type02 .txtType04 {
-  line-height: 1.375;
-}
-/* ========== changeRate
-======================================== */
-.changeRate {
-  -webkit-box-align: center;
-  align-items: center;
-}
-.changeRate > .point::before {
-  content: none;
-}
-.clm.changeRate > .clmItem:first-child {
-  width: 125px;
-}
-.clm.changeRate > .clmItem:last-child {
-  width: auto;
-  margin-left: 23px;
-}
-.changeRate .ttl {
-  font-size: 1.07143rem;
-  line-height: 1.53;
-}
-.changeRate > .txt {
-  padding: 11px 0 8px;
-}
-.changeRate > .point {
-  margin-top: 0;
-  padding: 0;
-}
-.changeRate .row1,
-.changeRate .row2 {
-  font-size: 1rem;
-}
-.changeRate .row1.global {
-  font-size: 0.92857rem;
-}
-.changeRate > .point > .clmItem:first-child {
-  padding-right: 18px;
-  position: relative;
-}
-.changeRate > .point > .clmItem:last-child {
-  position: relative;
-  padding-left: 34px;
-}
-.changeRate > .point > .clmItem:last-child::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 15px 0 15px 15px;
-  border-color: transparent transparent transparent #EB4741;
-}
-.changeRate > .point > .clmItem > .row1,
-.changeRate > .point > .clmItem > .row2 {
-  display: inline-block;
-}
-.changeRate + .noteType02 {
-  margin-top: 15px;
-}
-.imgList02 .clm.changeRate > .clmItem:first-child {
-  width: 92px;
-}
-.imgList02 > .T > .changeRate .ttl {
-  font-size: 1rem;
-  line-height: 1.4;
-}
-.imgList02 > .T > .changeRate .ttl > .big{
-  display: block;
-  font-size: 1.28571rem;
-  line-height: 1;
-}
-.imgList02 .changeRate > .txt {
-  padding: 12px 0 6px;
-  line-height: 1.2857;
-}
-.imgList02 .changeRate > .point {
-  justify-content: flex-start;
-}
-.imgList02 .changeRate > .point > .clmItem:first-child {
-  padding-right: 0;
-  text-align: center;
-}
-.imgList02 .changeRate > .point > .clmItem:last-child {
-  padding-left: 45px;
-}
-.imgList02 .clm.changeRate > .clmItem:last-child {
-  width: calc(100% - 142px);
-  margin-left: 10px;
 }
 /* ========== contactBlock
 ======================================== */
@@ -2270,12 +2132,6 @@ elementPatch
 }
 .scroll .table {
   white-space: normal;
-}
-/*---------------
- 均等
- ------------*/
- .table.fixedPc {
-  table-layout: fixed;
 }
  /*---------------
  stop
@@ -2958,20 +2814,6 @@ dl style
 #amex .btnType14:hover .icon {
   background: url(/cmn/type2021/img/bace/icon_login_02_amex.png) no-repeat left center;
   background-size: 21px 20px;
-}
-#amex .btnType17:hover {
-  color: #1D1F2C;
-  background: #fff;
-  border-color: #1D1F2C;
-}
-#amex .btnType17:hover > .txt > .txtItem02::before {
-  border-color: #1D1F2C;
-}
-#amex .btnType17:hover svg * {
-  stroke: #1D1F2C;
-}
-#amex .btnType17:hover svg [fill="#e60000"] {
-  fill: #fff;
 }
 #amex .faqList > .faqListItem {
   background: url(/cmn/type2021/img/icon_q_amex.png) no-repeat left 40px top 18px;

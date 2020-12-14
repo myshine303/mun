@@ -1750,7 +1750,7 @@ elementPatch
   max-width: 305px;
   padding: 0.92857rem 2.5rem;
   border-radius: 6px;
-  background: url(/cmn/type2021/img/icon_arrow_02.png) no-repeat left 10px center, #fff;
+  background: url(/cmn/type2021/img/icon_arrow_02.png) no-repeat left 20px center, #fff;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
   font-size: 1.14286rem;
   font-weight: bold;
@@ -1825,7 +1825,7 @@ elementPatch
   background: #E60000;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.4);
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.14286rem;
   font-weight: bold;
   line-height: 1.2;
   text-align: center;
@@ -1935,7 +1935,7 @@ elementPatch
   display: inline-block;
   width: 100%;
   max-width: 305px;
-  padding: 0.92857rem 21.5px;
+  padding: 0.92857rem 2.5rem;
   background: #fff;
   border-radius: 6px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
@@ -1963,10 +1963,10 @@ elementPatch
   transform: rotate(135deg);
 }
 .btnType03::before {
-  right: 10px;
+  right: 20px;
 }
 .btnType09::before {
-  left: 10px;
+  left: 20px;
 }
 .btnType10::before {
   content: '';
@@ -2039,45 +2039,17 @@ elementPatch
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 440px;
-  padding: 20px 24px;
+  max-width: 433px;
+  padding: 27px 24px;
   border: 2px solid #e60000;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 .btnType17 > .img {
-  margin-right: 16px;
+  margin-right: 20px;
 }
 .btnType17 > .txt > .txtItem01,.btnType17 > .txt > .txtItem02 {
   display: block;
-  font-size: 1rem;
   text-align: left;
-}
-.btnType17 > .txt > .txtItem01 {
-  font-weight: normal;
-}
-.btnType17 > .txt > .txtItem02 {
-  position: relative;
-  padding-left: 1em;
-  margin-top: 10px;
-}
-.btnType17 > .txt > .txtItem02::before {
-  position: absolute;
-  content: '';
-  display: block;
-  width: 10px;
-  height: 10px;
-  top: 3px;
-  left: -4px;
-  margin: auto;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  border-top: 1px solid #fff;
-  border-right: 1px solid #fff;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-}
-.clm.type17 > .btnType17:not(:first-child) {
-  margin-top: 10px;
 }
 .btnType18,.btnType19 {
   display: inline-block;
@@ -2087,7 +2059,7 @@ elementPatch
   position: relative;
   padding: 20px;
   border-radius: 6px;
-  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.4);
   text-decoration: none;
 }
 .btnType18 {
@@ -2125,10 +2097,9 @@ elementPatch
   padding: 0 10px;
 }
 .clm > .btnType19 {
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
-.clm > .btnType19 > .btnTxt,
-.clm > .btnType19 > .btnTtl {
+.clm > .btnType19 > .btnTxt,.clm > .btnType19 > .btnTtl {
   font-size: 1rem;
   text-align: left;
 }
@@ -2152,16 +2123,6 @@ elementPatch
 [class*="btnType"] > .btnTtl {
   display: block;
   font-weight: bold;
-}
-.btnType19 > .btnImg {
-  padding: 0;
-  margin-bottom: 20px;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  justify-content: center;
 }
 .btnType19 > .btnTtl {
   position: relative;
@@ -3121,83 +3082,6 @@ elementPatch
 .emBox.type02 .clmItem .txt + .linkList {
   margin-top: 10px;
 }
-.emBox.type02 .clmItem .img {
-  height: 142px;
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-}
-.emBox.type02 .txtType04 {
-  line-height: 1.5;
-}
-/* ========== changeRate
-======================================== */
-.changeRate {
-  padding: 8px 10px;
-  color: #e60000;
-  font-weight: bold;
-}
-.imgList02 > .T > .changeRate {
-  margin-bottom: 20px;
-}
-.changeRate .ttl {
-  line-height: 1.143;
-  text-align: center;
-}
-.changeRate .row1 {
-  font-size: 0.85714rem;
-}
-.changeRate .row2 {
-  font-size: 0.92857rem;
-}
-.changeRate .row2 .N {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 2.28571rem;
-  line-height: 1;
-}
-.ttl02 > .iconP + .txt {
-  vertical-align: top;
-}
-.changeRate > .txt {
-  border-radius: 6px;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  align-items: center;
-  padding: 4px;
-}
-.changeRate > .point {
-  position: relative;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  margin-top: 12px;
-  padding: 0 6.3%;
-}
-.changeRate > .point::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 15px 0 15px 15px;
-  border-color: transparent transparent transparent #EB4741;
-}
-.changeRate > .point > .clmItem {
-  width: auto;
-}
-.changeRate + .txtBlock .txtType04 + .txtType01 {
-  margin-top: 5px;
-}
-.changeRate + .noteType02 {
-  margin-top: 10px;
-}
 /* ========== contactBlock
 ======================================== */
 .contactBlock {
@@ -3703,8 +3587,8 @@ https://www.cr.mufg.jp/cmn/css/cmpPCLayout.css
 	.modal-body p.mainText{
 		font-size:18px;
 		font-weight:bold;
-  }
-  .modal-footer {
+	}
+	.modal-footer {
 		overflow:hidden;
 		padding:15px 15px 60px 15px;
 		text-align: center;
@@ -4172,14 +4056,6 @@ https://www.cr.mufg.jp/cmn/css/cmpPCLayout.css
 	-webkit-transition: opacity 0.5s;
 	transition: opacity 0.5s;
 }
-/* 外部リンク */
-.modalContentInner .mainText {
-  font-size: 1.57143rem;
-  line-height: 1.30909;
-  text-align: center;
-  font-weight:bold;
-  margin-bottom: 35px;
-}
 /* ========== slick
 ======================================== */
 /* slick default */
@@ -4360,28 +4236,7 @@ https://www.cr.mufg.jp/cmn/css/cmpPCLayout.css
 .bnrCarouselBlock01 {
   padding: 0 60px;
 }
-/* テキスト付 */
-.bnrCarouselBlock03 {
-  padding: 0;
-}
-.bnrCarouselBlock03 .item {
-  padding: 0 10px;
-}
-@media print, all and (max-width: 640px) {
-  .bnrCarouselBlock03 .slick-slide:not(.slick-center) .item {
-    transform: translateY(20px);
-  }
-  .bnrCarouselBlock03 .slick-slide:not(.slick-center) .item::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.5);
-  }
-}
-/* ここまでテキスト付 */
-.bnrCarouselBlock01 .item,
-.bnrCarouselBlock03 .item {
+.bnrCarouselBlock01 .item {
   padding: 0 3.5%;
 }
 .bnrCarouselBlock01 .item > .imgElm > a {
@@ -4887,16 +4742,6 @@ https://www.cr.mufg.jp/cmn/css/cmpPCLayout.css
   background: url(/cmn/type2021/img/icon_btn_01_amex.png) no-repeat left center;
   background-size: 16px 20px;
 }
-#amex .btnType17 {
-  background: #1D1F2C;
-  border-color: #1D1F2C;
-}
-#amex .btnType17 svg * {
-  stroke: #fff;
-}
-#amex .btnType17 svg [fill="#e60000"] {
-  fill: #1D1F2C;
-}
 #amex .btnLabel {
   color: #002663;
 }
@@ -5261,9 +5106,6 @@ https://www.cr.mufg.jp/cmn/css/cmpPCLayout.css
   }
   .sp50 {
     width: 50%;
-  }
-  .table.fixedSp {
-    table-layout: fixed;
   }
   /* ========== magnifyBtn
   ======================================== */
