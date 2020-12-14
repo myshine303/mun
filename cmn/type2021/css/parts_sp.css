@@ -2087,7 +2087,7 @@ elementPatch
   position: relative;
   padding: 20px;
   border-radius: 6px;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
   text-decoration: none;
 }
 .btnType18 {
@@ -2125,9 +2125,10 @@ elementPatch
   padding: 0 10px;
 }
 .clm > .btnType19 {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
-.clm > .btnType19 > .btnTxt,.clm > .btnType19 > .btnTtl {
+.clm > .btnType19 > .btnTxt,
+.clm > .btnType19 > .btnTtl {
   font-size: 1rem;
   text-align: left;
 }
@@ -2151,6 +2152,16 @@ elementPatch
 [class*="btnType"] > .btnTtl {
   display: block;
   font-weight: bold;
+}
+.btnType19 > .btnImg {
+  padding: 0;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
 }
 .btnType19 > .btnTtl {
   position: relative;

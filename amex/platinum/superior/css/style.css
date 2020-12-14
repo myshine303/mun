@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+/* 5つのプロテクション */
+.contentsWrap {
+  background-image: url('/amex/platinum/superior/img/bg_pc.png');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media screen and (max-width: 640px) {
+  .contentsWrap {
+    background-image: url('/amex/platinum/superior/img/bg_sp.png');
+  }
+}
+
+/* ========== コンポーネントの固有スタイル
+既存コンポーネントへのカスケードによる変更は.localAdjustを使用
+======================================== */
+
+/* パンくず(白)*/
+.breadcrumbsItem, .breadcrumbsItem a {
+  color: #fff;
+}
+
+/* 白背景のコンテンツエリア */
+.localContentsBox {
+  background: #fff;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  padding: 1px 30px 80px
+}
+@media screen and (max-width: 640px) {
+  .localContentsBox {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 20px 0 70px;
+  }
+}
+
+/* 数字付き※リスト */
+.noteType03.localAdjust li {
+  line-height: 1.4;
+}
+
+/* 数字付き※リスト */
+.clm.localAdjust {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: -20px;
+}
+.clm.localAdjust > .clmItem {
+  max-width: 245px;
+  margin-bottom: 20px;
+}

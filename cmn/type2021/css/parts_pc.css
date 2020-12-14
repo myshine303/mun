@@ -1293,6 +1293,7 @@ elementPatch
 }
 .btnType18 {
   font-size: 1.14286rem;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
 }
 .clm > .btnType18 {
   width: 100%;
@@ -1320,6 +1321,10 @@ elementPatch
   font-size: 1.14286rem;
   padding: 0 20px;
   margin-top: 10px;
+}
+.clm > .btnType19 {
+  width: calc(50% - 15px);
+  margin-bottom: 30px;
 }
 .clm > .btnType19:not(:first-child) {
   margin-left: 30px;
