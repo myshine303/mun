@@ -130,6 +130,7 @@ window.addEventListener('DOMContentLoaded', function(){
 				var text = e.currentTarget.getAttribute('data-bumperText')
 				document.getElementById('callText').textContent = text
 				var link = e.currentTarget.getAttribute('href')
+				document.querySelector('.js-mwLinkYes').setAttribute('href', link)
 
 				if (timerID) {
 					clearTimeout(timerID)

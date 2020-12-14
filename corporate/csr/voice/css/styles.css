@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/*アコーディオン見出し*/
+.acdCnt01 .date01{
+	font-size: 1rem;
+	font-weight: normal;
+}
+/*アコーディオン内ボックス*/
+.voiceArwBlock{
+
+}
+.voiceArwBlock .voiceHear{
+	border: 1px solid #CFCFCF;
+	border-radius: 10px;
+	padding: 15px 20px;
+	position: relative;
+	margin-bottom: 55px;
+}
+.voiceArwBlock .voiceHear::after{
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 15px 15px 0 15px;
+	border-color: #ffdbdb transparent transparent transparent;
+	position: absolute;
+	left: 50%;
+	bottom: -35px;
+	margin-left: -7.5px;
+}
+.voiceArwBlock .voiceHear .voiceHearTitWrap{
+	display: -webkit-box;
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+.voiceArwBlock .voiceHear .voiceHearTitWrap .img{
+	max-width: 46px;
+}
+.voiceArwBlock .voiceHear .voiceHearTitWrap .title{
+	margin-left: 15px;
+	font-size: 1.42857rem;
+	font-weight: bold;
+}
+.voiceArwBlock .voiceHear .voiceHearText{
+	font-size: 1rem;
+	margin-top: 15px;
+}
+
+.voiceArwBlock .voiceRespond{
+	background-color: #FCF4F4;
+	border-radius: 10px;
+	padding: 15px 20px;
+}
+.voiceArwBlock .voiceRespond .voiceResTitWrap{
+	display: -webkit-box;
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+.voiceArwBlock .voiceRespond .voiceResTitWrap .img{
+	max-width: 46px;
+}
+.voiceArwBlock .voiceRespond .voiceResTitWrap .title{
+	font-size: 1.42857rem;
+	font-weight: bold;
+	margin-left: 15px;
+}
+.voiceArwBlock .voiceRespond .voiceResText{
+	font-size: 1rem;
+	margin-top: 15px;
+}
+
+@media screen and (min-width:641px) {
+	.voiceArwBlock .voiceHear{
+		margin-bottom: 75px;
+	}
+	.voiceArwBlock .voiceHear::after{
+		border-width: 22px 21px 0 21px;
+		bottom: -48px;
+		margin-left: -22px;
+	}
+}

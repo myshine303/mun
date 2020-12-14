@@ -1,0 +1,367 @@
+@charset "utf-8";
+
+/*general*/
+#chatbot img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+#chatbot.launcher {
+	position : fixed;
+	bottom : 0;
+	right : 4.687%;
+	margin-right : 65px;
+	margin-bottom: 25px;
+	z-index : 2222;
+}
+#chatbot.launcher.chatbot_open {
+	width: 382px;
+	right : 0;
+	margin-right : 0;
+	margin-bottom: 0;
+	z-index: 2223;
+}
+#chatbot.launcher.chatbot_ani_open {
+	-webkit-animation: ani-chatbot_ani_open .5s linear forwards;
+	-moz-animation: ani-chatbot_ani_open .5s linear forwards;
+	-o-animation: ani-chatbot_ani_open .5s linear forwards;
+	animation: ani-chatbot_ani_open .5s linear forwards;
+/*
+	-webkit-animation-name: ani-chatbot_ani_open;
+	-webkit-animation-duration: .5s;
+	animation-name: ani-chatbot_ani_open;
+	animation-duration: .5s;
+*/
+}
+@keyframes ani-chatbot_ani_open {
+	0%{
+		bottom: -100%;
+	}
+	100% {
+		bottom: 0;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	#chatbot.mixed {
+		position : fixed;
+		bottom : 0;
+		right : 4.687%;
+		margin-right : 65px;
+		margin-bottom: 25px;
+		z-index : 2222;
+	}
+	#chatbot.mixed,
+	#chatbot.launcher {
+		width: 175px;
+		right: 50%;
+		margin-right: 0;
+		transform: translateX(50%);
+	}
+	#chatbot.mixed.chatbot_open {
+		width: 382px;
+		right : 0;
+		margin-right : 0;
+		margin-bottom: 0;
+		z-index: 2223;
+		transform: translateX(0);
+	}
+	#chatbot.mixed.chatbot_open,
+	#chatbot.launcher.chatbot_open {
+		width: 100%;
+		height: 100%;
+		transform: translateX(0);
+	}
+	#chatbot.mixed.chatbot_open .chatbot_box,
+	#chatbot.launcher.chatbot_open .chatbot_box {
+/*		height: 100vh;*/
+/*		height: 100%;*/
+	}
+	#chatbot.mixed.chatbot_open.chatbot_ani_min,
+	#chatbot.launcher.chatbot_open.chatbot_ani_min {
+/*
+		height: 50vh;
+		height: 50%;
+		-webkit-transition: .3s linear;
+		transition: .3s linear;
+*/
+		-webkit-animation: ani-chatbot_ani_min .5s linear forwards;
+		-moz-animation: ani-chatbot_ani_min .5s linear forwards;
+		-o-animation: ani-chatbot_ani_min .5s linear forwards;
+		animation: ani-chatbot_ani_min .5s linear forwards;
+	}
+	#chatbot.mixed.chatbot_open.chatbot_ani_max,
+	#chatbot.launcher.chatbot_open.chatbot_ani_max {
+/*
+		height: 100vh;
+		height: 100%;
+		-webkit-transition: .3s linear;
+		transition: .3s linear;
+		*/
+		-webkit-animation: ani-chatbot_ani_max .5s linear forwards;
+		-moz-animation: ani-chatbot_ani_max .5s linear forwards;
+		-o-animation: ani-chatbot_ani_max .5s linear forwards;
+		animation: ani-chatbot_ani_max .5s linear forwards;
+	}
+}
+@keyframes ani-chatbot_ani_min {
+	0%{
+		height: 100%;
+	}
+	100% {
+		height: 50%;
+	}
+}
+@keyframes ani-chatbot_ani_max {
+	0%{
+		height: 50%;
+	}
+	100% {
+		height: 100%;
+	}
+}
+
+
+/*general box*/
+#chatbot .chatbot_box {
+/*	display: none;*/
+	position: relative;
+	height: 512px;
+/*	background-color: #fff5f5;*/
+	border-radius: 5px;
+	border-left: 1px solid #dbdbdb;
+	border-right: 1px solid #dbdbdb;
+	border-bottom: 1px solid #dbdbdb;
+	overflow: hidden;
+}
+#chatbot .chatbot_box .chatbot_ttl {
+	width: 100%;
+	color: #333333;
+	font-weight: bold;
+	background-color: #ffffff;
+	text-align: left;
+	border-bottom: 1px solid #dbdbdb;
+	border-top: 6px solid #e60000;
+	padding: 10px 55px 10px 10px;
+	font-size: 16px;
+	-webkit-user-select: none;
+	user-select: none;
+	box-sizing: border-box;
+}
+#chatbot .chatbot_box .chatbot_empty {
+	padding: 0;
+}
+#chatbot .chatbot_box .chatbot_ttl img {
+	vertical-align: middle;
+}
+#chatbot #chatbot_box_overlay {
+	display: none;
+	background-color: rgba(111,111,111,0.5);
+	z-index: 4;
+}
+#chatbot.chatbot_brand #chatbot_box_overlay {
+	display: block;
+}
+#chatbot #chatbot_box_overlay span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50% -50%);
+	display: block;
+	border: 5px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 5px solid #e60000;
+	width: 30px;
+	height: 30px;
+	-webkit-animation: spin 1s linear infinite;
+	-moz-animation: spin 1s linear infinite;
+	-o-animation: spin 1s linear infinite;
+	animation: spin 1s linear infinite;
+}
+@-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+#chatbot #chatbot_box_overlay,
+#chatbot #chatbot_box_inner,
+#chatbot #chatbot_box_bedore {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@media only screen and (max-width: 639px) {
+	#chatbot .chatbot_box {
+		width: 100%;
+		height: 100%;
+	}
+	#chatbot.embedded {
+/*		height: calc(100vh - 100px);*/
+		height: 512px;
+	}
+}
+
+/*general container*/
+#chatbot .chatbot_cont {
+	height: calc(100% - 51px);
+	padding: 10px;
+  background-color: #fff5f5;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	position: relative;
+	-webkit-overflow-scrolling: touch;
+}
+#chatbot .chatbot_max {
+	height: calc(100% - 7px);
+}
+#chatbot .chatbot_cont p {
+	font-size: 14px;
+	margin-left: 90px;
+}
+#chatbot .chatbot_cont p.chatbot_error {
+	margin-left: 0;
+}
+#chatbot .chatbot_cont .chatbot_icon {
+	position: relative;
+	min-height: 66px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+	background: #ffffff;
+	color: #333333;
+	border-radius: 20px;
+	border: solid 2px #e60000;
+}
+#chatbot .chatbot_cont .chatbot_icon:before {
+	position: absolute;
+	top: -10px;
+	left: -95px;
+	width: 80px;
+	height: 80px;
+	background: url(/cmn/img/chatbot/icon.png)no-repeat;
+	background-size: 100% 100%;
+	content: "";
+}
+#chatbot .chatbot_cont .chatbot_icon:after {
+	position: absolute;
+	border-color: transparent #e60000;
+	border-style: solid;
+	border-width: 7px 15px 3px 0;
+	display: block;
+	width: 0;
+	top: 10px;
+	z-index: 1;
+	left: -15px;
+	content: '';
+}
+#chatbot .chatbot_cont .chatbot_icon.chatbot_error:after,
+#chatbot .chatbot_cont .chatbot_icon.chatbot_error:before {
+	display: none;
+}
+
+/*general list*/
+#chatbot .chatbot_cont .chatbot_list {
+	margin-left: 90px;
+}
+#chatbot .chatbot_cont .chatbot_list a {
+	width: 100%;
+	display: inline-block;
+	color: #333;
+	text-decoration: none;
+}
+#chatbot .chatbot_cont .chatbot_list span {
+	width: 100%;
+	display: inline-block;
+  box-sizing: border-box;
+}
+#chatbot .chatbot_cont .chatbot_list li {
+	background-color: #FFFFE0;
+	border-radius: 15px;
+	box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.9), inset 0 1px 0 rgba(255, 255, 255, 0.4) !important;
+	color: #333333;
+	cursor: pointer;
+}
+#chatbot .chatbot_cont .chatbot_list li a,
+#chatbot .chatbot_cont .chatbot_list li span {
+	padding: 9px 26px;
+}
+#chatbot .chatbot_cont .chatbot_list li a:before,
+#chatbot .chatbot_cont .chatbot_list li span:before {
+	display: inline-block;
+	position: relative;
+	top: 2px;
+	left: -4px;
+	width: 0;
+	height: 0;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-left: 8px solid #535353;
+	content: "";
+}
+
+/*general close*/
+#chatbot #chatbot_close1 {
+	position: absolute;
+	top: 17px;
+	right: 10px;
+	width: 22px;
+	height: 22px;
+	padding: 5px;
+	cursor: pointer;
+	z-index: 3;
+	box-sizing: border-box;
+}
+#chatbot #chatbot_mini {
+	position: absolute;
+	top: 22px;
+	right: 40px;
+	border: 2px solid #7f7f7f;
+	width: 12px;
+	height: 12px;
+	z-index: 3;
+	box-sizing: border-box;
+}
+#chatbot.mixed .chatbot_launcher,
+#chatbot.launcher #chatbot_mini,
+#chatbot.mixed #chatbot_mini,
+#chatbot.embedded #chatbot_mini,
+#chatbot.mixed #chatbot_close1,
+#chatbot.embedded #chatbot_close1 {
+	display: none;
+}
+@media only screen and (max-width: 640px) {
+	#chatbot.mixed .chatbot_launcher,
+	#chatbot.launcher #chatbot_mini,
+	#chatbot.mixed #chatbot_mini,
+	#chatbot.mixed #chatbot_close1 {
+		display: block;
+	}
+}
+
+/*launcher*/
+#chatbot .chatbot_launcher {
+	position : relative;
+}
+#chatbot .chatbot_launcher img {
+	width : 100%;
+}
+#chatbot .chatbot_launcher #chatbot_open {
+	display: inline-block;
+}
+#chatbot .chatbot_launcher #chatbot_close {
+	position : absolute;
+	top : -5px;
+	right : 5px;
+}
+
+@media only screen and (max-width: 640px) {
+	#chatbot .chatbot_launcher #chatbot_close {
+		width: 20px;
+	}
+}

@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/************************************************
+adjust parts
+************************************************/
+/*---------------
+column
+------------------*/
+.columnBoxWrap .columnBoxImg {
+	width: 100%;
+	margin: 0 0 1rem 0;
+	text-align: center;
+}
+
+.columnBoxWrap.typeImgRight .columnBoxImg {
+	width: 100%;
+	margin: 1.142rem 0 0 0;
+}
+
+/*---------------
+box
+------------------*/
+.dorderBox01 {
+	margin: 1.142rem 0 1.428rem 0;
+	padding: 35px 20px;
+	border: 1px solid #CFCFCF;
+}
+
+.dorderBox02 {
+	margin: 1.142rem 0 1.428rem 0;
+	padding: 35px 20px;
+	background: #FCF4F4;
+}
+
+.magnifyImgBox {
+	margin: 1.428rem 0 1.142rem 0;
+	text-align: center;
+	text-indent: 0;
+}
+
+/*---------------
+table
+------------------*/
+
+
+/*---------------
+margin
+------------------*/
+.columnBoxWrap {
+	margin: 1.214rem 0 1.142rem 0;
+}
+
+.cmpTableWrap {
+	margin-bottom: 0.428rem;
+}
+
+.mg-BOneFont, .mg-BtPrtBasic {
+	margin-bottom: 0.857rem !important;
+}

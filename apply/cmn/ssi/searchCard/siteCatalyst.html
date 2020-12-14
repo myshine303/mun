@@ -1,0 +1,5 @@
+<!--Search condition Processing-->
+<script language="JavaScript">
+var arg=new Object;var tcode="";var base64list="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";var pair=location.search.substring(1).split('&');for(var i=0;pair[i];i++){var kv=pair[i].split('=');arg[kv[0]]=kv[1]}if(arg.tcode){tcode=base64decode(arg.tcode)}function base64decode(s){var t='',p=-8,a=0,c,d;for(var i=0;i<s.length;i++){if((c=base64list.indexOf(s.charAt(i)))<0)continue;a=(a<<6)|(c&63);if((p+=6)>=0){d=(a>>p)&255;if(c!=64)t+=String.fromCharCode(d);a&=63;p-=8}}return t}
+</script>
+<!--/Search condition Processing-->

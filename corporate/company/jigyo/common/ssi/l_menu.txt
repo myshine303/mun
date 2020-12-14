@@ -1,0 +1,32 @@
+  <div id="lmenu">
+    <div class="block">
+      <script type="text/javascript">
+	<!--
+	write_font_size_change();
+
+	//-->
+	</script>
+      <noscript>
+      <div class="fs"><img src="/corporate/common/image/sp.gif" alt=""></div>
+      </noscript>
+    </div>
+    <div id="leftMenu" class="clr"> <a href="/corporate/company/vision/index.html"><img src="/corporate/company/image/title.gif" alt="三菱UFJニコスについて" width="220" height="39"></a><br>
+      <ul class="secondMenu">
+        <li class="on01"><a href="/corporate/company/vision/index.html">三菱UFJニコスのビジョン</a></li>
+        <li class="on02"><a href="/corporate/company/greet/index.html">社長ご挨拶</a></li>
+        <li class="on03"><a href="/corporate/company/overview/index.html">会社概要</a></li>
+        <li class="on04"><a href="/corporate/company/jigyo/index.html">事業内容</a>
+			<ul class="thirdMenu">
+			<li class="third_on01"><a href="/corporate/company/jigyo/creditcard.html">クレジットカード事業</a></li>
+			<li class="third_on02"><a href="/corporate/company/jigyo/finance.html">ファイナンス事業</a></li>
+			<li class="third_on03"><a href="/corporate/company/jigyo/fee_bis.html">フィービジネス事業</a></li>
+			<li class="third_on04"><a href="/corporate/company/jigyo/ec_sol.html">ECソリューション</a></li>
+			<li class="third_on05"><a href="/corporate/company/jigyo/new.html">新たな取り組み</a></li>
+			</ul>
+        </li>
+        <li class="on06"><a href="/corporate/company/financial_affairs/index.html">財務情報</a></li>
+        <li class="on07"><a href="/corporate/company/governance/index.html">コーポレートガバナンスについて</a></li>
+        <li class="btm on08"><a href="/corporate/company/risk/index.html">リスク管理</a></li>
+      </ul>
+    </div>
+  </div>

@@ -22,6 +22,8 @@
 	<link rel="stylesheet" href="/cmn/type2021/css/parts_pc.css" media="print, all and (min-width:641px)">
 	<!-- /css common -->
 	<!-- css local -->
+	<link rel="stylesheet" href="/cmn/type2021/css/adjust_sp.css">
+	<link rel="stylesheet" href="/cmn/type2021/css/adjust_pc.css" media="print, all and (min-width:641px)">
 	<!-- /css local -->
 
 	<!-- js common -->
@@ -35,7 +37,7 @@
 
 <body>
 
-	<!--#include virtual="/cmn/type2021/ssi/header_01.html" -->
+	<!--#include virtual="/cmn/type2021/ssi/mufgcard/header.html" -->
 
 	<div class="breadcrumbsWrap">
 		<nav class="breadcrumbs">
@@ -51,7 +53,7 @@
 		<div id="contents">
 			<div class="sectionInner01">
 				<h1 class="ttl01">家族カード</h1>
-	      <section class="section04">
+				<section class="section04">
 					<p class="parBase01">ご家族の方にも割安な年会費で、充実したサービスをご提供。</p>
 					<p class="parBase01">ご家族の方にもお得な年会費で、本会員様と同様の機能やサービスをご利用いただける“家族カード”をご用意しています。</p>
 				</section>
@@ -86,12 +88,12 @@
 						<p class="parBase01">お持ちのカードによって年会費は異なります。</p>
 						<div class="scroll">
 							<table class="table type05">
-								<!--<colgroup><col class="tableW30par"><col class="tableW35par"><col class="tableW35par"></colgroup>-->
+								<colgroup><col class="tableW30par"><col class="tableW35par"><col class="tableW35par"></colgroup>
 								<thead>
 									<tr>
-									<th>カード種類</th>
-									<th>1名様まで</th>
-									<th>2人目以降</th>
+										<th>カード種類</th>
+										<th>1名様まで</th>
+										<th>2人目以降</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -102,12 +104,12 @@
 									<tr>
 										<th>プレミオ</th>
 										<td class="txtBold txtRed vAlignMiddle">無料</td>
-											<td class="txtBold txtRed">1名様につき1,100円（税込）</td>
+										<td class="txtBold txtRed">1名様につき1,100円（税込）</td>
 									</tr>
 									<tr>
 										<th>ゴールド</th>
 										<td class="txtBold txtRed vAlignMiddle">無料</td>
-											<td>1名様につき440円（税込）<br>（初年度年会費無料)</td>
+										<td>1名様につき440円（税込）<br>（初年度年会費無料)</td>
 									</tr>
 									<tr>
 										<th>一般</th>
@@ -119,13 +121,13 @@
 											1名様につき440円（税込）（初年度年会費無料）<br>
 											※次年度以降は、前年度の年間ショッピングご利用金額が20万円以上（本会員・家族会員合算）、かつ本会員様のWEB明細チェックのご登録により無料とします。
 
-											</td>
+										</td>
 									</tr>
 									<tr>
 										<th>イニシャルカード<br>（学生の方）</th>
-											<td colspan="2" class="txtRed txtBold vAlignMiddle">
-												お申込みいただけません
-											</td>
+										<td colspan="2" class="txtRed txtBold vAlignMiddle">
+											お申込みいただけません
+										</td>
 									</tr>
 								</tbody>
 							</table>
@@ -148,15 +150,17 @@
 					</div>
 				</section><!--.section01-->
 
-	    	<section class="section01">
+				<section class="section01">
 					<h2 class="ttl02">お申込方法</h2>
-		    	<section class="section02 small">
+					<section class="section02 small">
 						<h3 class="ttl03">WEB</h3>
 						<p class="parBase01">MUFGカードWEBサービスにご登録いただいている方はオンラインで簡単にお申込みができます。<br>MUFGカードWEBサービスにログインのうえ、お手続きください。</p>
 						<ul class="alignLists listType02">
 							<li class="txtBold txtRed">オンラインでのご入力完了後、審査のうえ、当社よりご自宅住所に印字済申込書を郵送いたします。内容をご確認いただき、本会員様・家族会員様のご署名・その他必須事項をご記入のうえ、ご返送ください。</li>
 							<li>審査の状況により、ご希望にそえない場合や、お手続きに時間がかかる場合がございますのであらかじめご了承ください。</li>
 						</ul>
+
+						<!--#include virtual="/cmn/type2021/ssi/mufgcard/csLogin.html" -->
 					</section>
 
 					<section class="section02">
@@ -170,8 +174,6 @@
 						</p>
 					</section>
 				</section><!--.section01-->
-
-	      <!--#include virtual="/cmn/ssi/mufgcard/csLogin.html" -->
 
 				<section class="section01">
 					<h2 class="ttl02">サービスに関するお問合せ</h2>
@@ -187,7 +189,11 @@
 
 	</main><!-- /#mainArea -->
 
+	<!--#include virtual="/cmn/type2021/ssi/mufgcard/fixedMenu.html" -->
 	<!--#include virtual="/cmn/type2021/ssi/footer_01.html" -->
+	<!--#include virtual="/cmn/ssi/siteCatalyst.html" -->
+
+	<!--#include virtual="/cmn/ssi/mufgcard/searchToolJS.html" -->
 
 </body>
 

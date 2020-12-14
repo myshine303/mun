@@ -306,9 +306,7 @@
 	visibility: visible;
 }
 #headerArea.cardMember .headerBtm.is-search.is-open {
-	top: 157px;
-	opacity: 1;
-	visibility: visible;
+	z-index: 4;
 }
 #headerArea .headerBtm > .inner {
 	width: 1280px;
@@ -742,7 +740,8 @@
 	justify-content: space-between;
 	/*flex-wrap: nowrap;*/
 }
-#headerArea .gnavLinkList01.item6:before{
+#headerArea .gnavLinkList01.item2:before,
+#headerArea .gnavLinkList01.item6:before {
   content:"";
   display: block;
 	width:100%;
@@ -750,14 +749,16 @@
 	margin-left: 20px;
   order:1;
 }
-#headerArea .gnavLinkList01.item6:after{
+#headerArea .gnavLinkList01.item2:after,
+#headerArea .gnavLinkList01.item6:after {
   content:"";
   display: block;
 	width:100%;
 	max-width: 192px;
 	margin-left: 20px;
 }
-#headerArea .gnavLinkList01.item7:after{
+#headerArea .gnavLinkList01.item3:after,
+#headerArea .gnavLinkList01.item7:after {
   content:"";
   display: block;
 	width:100%;

@@ -1,14 +1,82 @@
 @charset "utf-8";
 
-#platinum {
-  background-image: url('/amex/platinum/protection/image/bg.png');
+/* 5つのプロテクション */
+.contentsWrap {
+  background-image: url('/amex/platinum/protection/image/bg_pc.png');
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center 267px;
 }
-.breadcrumbs {
+@media screen and (max-width: 640px) {
+  .contentsWrap {
+    background-image: url('/amex/platinum/protection/image/bg_sp.png');
+  }
+}
+
+/* ========== コンポーネントの固有スタイル
+既存コンポーネントへのカスケードによる変更は.localAdjustを使用
+======================================== */
+
+/* パンくず(白)*/
+.breadcrumbsItem, .breadcrumbsItem a {
   color: #fff;
 }
-.breadcrumbs a {
-  color: #fff;
+
+/* 白背景のコンテンツエリア */
+.localContentsBox {
+  background: #fff;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  padding: 1px 30px 80px
+}
+@media screen and (max-width: 640px) {
+  .localContentsBox {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 20px 0 70px;
+  }
+}
+
+/* 5つのプロテクション */
+.colWrap.localAdjust {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  border-top: 1px solid #CFCFCF;
+  padding-top: 20px;
+  margin-top: -40px;
+}
+.colWrap.localAdjust .colItem {
+  width: 33.3%;
+}
+.colWrap.localAdjust .colItem:last-child {
+  border-right: 1px solid #CFCFCF;
+}
+@media screen and (max-width: 640px) {
+  .colWrap.localAdjust {
+    border-top: none;
+  }
+  .colWrap.localAdjust .colItem {
+    width: 100%;
+  }
+  .colWrap.localAdjust .colItem:last-child {
+    border-right: none;
+    border-bottom: 1px solid #CFCFCF;
+  }
+}
+
+/* 数字付き※リスト */
+.noteType03.localAdjust li {
+  line-height: 1.4;
+}
+
+/* 数字付き※リスト */
+.clm.localAdjust {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: -20px;
+}
+.clm.localAdjust > .clmItem {
+  max-width: 245px;
+  margin-bottom: 20px;
 }
